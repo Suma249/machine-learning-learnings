@@ -1,0 +1,114 @@
+website: http://web.mitu.edu/18.06
+
+system of linear equations: n equals and n unknowns
+
+row picture: picture of one equation at a time
+column picture: a column at a time, 
+matrix form: 
+
+ex: 2x-y=0
+-x+2y=3
+matrix: rectangular array of numbers
+[2 -1] [x]=[0]
+[-1 2]'[y]=[3]
+
+we got 2 unknowns for the given 2 linear equations
+0 and 3 are vectors that go into the vector
+matrix of coefficients -> a
+vector of unknows -> x
+on the right side we have vector -> b
+ax=b -> a linear equation
+
+row picture for this example: we will take one rpw at a time
+draw a xy plane, and plot all the points that sarisfy the first equation, so we are looking at all the points that satisfy 2x-y=0
+its always good to start with which point on the horizontal line, y is zero. the x axis has y as zero and that in this case actually the x is zero
+the point, the origin, the point with coordinates (0,0) is on the line, it solves that equation as 2(0)-0 => 0 which is equal to 0
+another point that solves this question is (1,2) as 2(1)-2 =>0 which is equal to 0
+all these 2 points lie on a straight line as it is a straight line equation and this is a solution to the the equation 2x-y=0
+second equation is -x+2y=3, it does not go throught oeigin. in this case, yes, because for prebios equation the equation was equal to 0 but here
+in this case, the equation is equal to non zero value
+if y=0, x=-3 this point satosfies the equation -x+2y=3
+if x=-1, y=1. this point satisfies the equation -x+2y=3
+
+if we draw lines for these two equation at the connecting points thsat satisfy these two equations, these two lines will meet at , x=1 and y=2
+
+column picture
+ [2]    [-1]   [0]
+x    + y     =
+ [-1]   [2]    [3]
+
+now this column picture equation is asking us to find, somehow to combine the two vectors in the right amounts to get  the right side vector
+i.e we have tp find the right linear combination, its a linea combination of the columns
+we need to make x and y numbers a roght numbers to produce [0] [3]
+these vectors again have two components
+draw rhe xy plane and draw the columns on the xy plane fiurst column is at 2 and -1 and second column is at -1 and 2(components)
+
+if wetake x=1 and y=2, amrk this point on the xy plane, and cnnect these columns on the xy plane
+1 times of columns1 and 2 times of columns 2 and if we add on 
+  [2]   [-2]   [0]
+      +      = 
+  [-1]   [4]   [3]
+
+like tis if we take all the combinations of x and y that satisfy the eqyatuons, it will fill whole xy plane
+
+Three equations and 3 unknonwns
+
+2x-y =0, -x+2y-z =-1, -3y+4z=4
+
+how can we undersyand the aboce equations?
+row picture is one way, column picture is one way and amtrix form
+
+ [2 -1 0]   [0]
+A[-1 2 -1] b[-1]
+ [0 -3 4]   [4]
+
+we ahve to take these 3 equations one at a time,
+draw xyz plane
+if we take -x+2y-z=-1
+fpr x=1,y=0, z=0, the equation will be satisfied
+x=0, y=0, x=1, the equation will get satsfied
+if we have linea equation, the graph all the points that solve sthe eqution will be a plane
+
+and even for first equartuin, we will get a plane
+
+each row in a 3 by 3 problem gives us a plane in 3 dimension
+
+and these 2 planes will meet in a line, i.e these two planes will meet in a line
+
+for thrs equation, it is again a third plane
+and now these 3 planes will meet at a point -> its a solution
+
+and this row picture is getting hard to see 
+
+column picture
+ [2]     [-1]  [0]     [0]
+x[-1] + y[2] +z[-1]  = [-1]
+ [0]     [-3]  [4]     [4]
+
+we have a got linear combination of three vectors on the right hand aide, each one is 3 dimensional vector
+we want to know what combination of these 3 vecrors produces the right hand side result
+
+represent thee 3 three dimsional vectors on xyz plane, we have rto combinw these 3 vectors with right combination to produce the right hand saide linea vector
+
+for x=0, y=0 and z=1, these thre linear vectors can be combined to get the required linear vector on the right habd side
+
+
+lets change our right hand side linear vectir as [1,1,-3]
+in this case x=1,y=1 and z=0 will give solvr the equations
+
+can we solve ax=b for every right hand side b?
+do the linear combination of columns fill 3 dimensional space, 
+every b means all b's in 3 dimensional space
+when we multiply a matrix by vector we get a combination of columns
+we are taking a linear combination of the 3 cokumns and we are trying to find b, 
+te matrux in our case which is A is yes, but there can be cases where answer could be no
+then when could it go wrong? if these 3 equations all lie in the same plane., then their combinations will lie in that same plane
+then we are in trouble, ex: if column 3 is just the the sum of column 1 and column 2, that would be a matrix A where answer could be no
+because the combinations , if column 3 is in the same plane as coluymn one and 2, all the combinations are in the same plane amd the righr hand side b that we
+could be getting would be in that same plane, in this case also for few b's we could solve it bust most of the right hand side b's woud be out of the plane
+and unreachable, that would be singulsr case, the matrix would be not invertible, there would not be a solution for every b
+
+matrix form of equations
+Ax=b
+multiplying a matrix by a vector
+Ax is a combination of a columns of A
